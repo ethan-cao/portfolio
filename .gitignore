@@ -1,3 +1,5 @@
+node_modules
+
 # Logs
 logs
 *.log
@@ -51,8 +53,13 @@ typings/
 # Output of 'npm pack'
 *.tgz
 
+<<<<<<< HEAD
 # dotenv environment variables file
 .env
+=======
+# dotenv environment variable files
+.env*
+>>>>>>> 0b827e879480db4033ca3ff348469b4992d12f01
 
 # gatsby files
 .cache/
