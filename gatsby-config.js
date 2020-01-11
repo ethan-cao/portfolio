@@ -1,38 +1,22 @@
 module.exports = {
   siteMetadata: {
-    title: `Mohan`,
+    title: `Guangxue`,
     description: `A personal portfolio site built with GatsbyJS`,
-    author: `mohan.tech`,
+    author: `Guangxue Cao`,
     footerLinks: [
       {
         name: "Facebook",
-        url: "https://www.facebook.com/sree.dhannu"
-      },
-      {
-        name: "Instagram",
-        url: "https://www.instagram.com/mohan.houseStark"
+        url: "https://www.facebook.com/"
       }
     ],
     socialLinks: [
       {
-        name: "Facebook",
-        url: "https://www.facebook.com/sree.dhannu"
-      },
-      {
-        name: "Instagram",
-        url: "https://www.instagram.com/mohan.houseStark"
-      },
-      {
-        name: "Twitter",
-        url: "https://www.twitter.com/_MrNullPointer"
-      },
-      {
         name: "Github",
-        url: "https://www.github.com/mohanmonu777"
+        url: "https://github.com/ethan-cao"
       },
       {
         name: "LinkedIn",
-        url: "https://www.linkedin.com/mohanmonu777"
+        url: "https://www.linkedin.com/in/ethancao/"
       }
     ]
   },
@@ -85,7 +69,7 @@ module.exports = {
       resolve: `gatsby-plugin-manifest`,
       options: {
         name: `gatsby-personal-portfolio`,
-        short_name: `mohan's portfolio`,
+        short_name: `Guangxue's portfolio`,
         start_url: `/`,
         background_color: `#616CAA`,
         theme_color: `#616CAA`,

@@ -17,7 +17,7 @@ export default function index() {
         <Menu>
           <ul>
             <li className="logo">
-              <NavLink to="/">MOHAN</NavLink>
+              <NavLink to="/">Guangxue</NavLink>
             </li>
             <li>
               <NavLink to="/projects">See my work</NavLink>

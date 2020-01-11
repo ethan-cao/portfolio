@@ -1,9 +1,9 @@
 ---
 page: Index
-heading: Hello There!
+heading: Hello World!
 ---
-I’m Mohan and I love creating useful stuff. I’m a Passionate
-Front-end Developer, UI/UX Enthusiast, AndroidGeek, FirebaseLover
-and Web Developer. Currently, I’m an Undergrad in Computer
-Science.
+I'm Guangxue, a software engineer based in the Netherlands.
 
+My passion lays in building elegant solution with inituitive user experience.
+
+BTW, currently, I’m looking for new challenges 
