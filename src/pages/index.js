@@ -9,11 +9,16 @@ export default ({ data }) => {
 
   return (
     <Layout>
-      <Seo />
+      <Seo/>
       <h1>
-        My name is Bonneville. I'm a starter theme for Gatsby and I like to talk
-        as if I am a living thing
+        My name is Guangxue Cao. I'm a software engineer based in the Netherlands.
       </h1>
+      <h1>
+        My passion lays in building elegant solutions with intuitive user experience.
+      </h1>
+      <h4>
+        BTW, I am looking for new challenge currently.
+      </h4>
       <h4 className={styles.feature}>
         {data.allMarkdownRemark.totalCount} Featured Posts
       </h4>

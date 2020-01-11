@@ -7,15 +7,15 @@
 module.exports = {
   /* Your site config here */
   siteMetadata: {
-    title: `Bonneville`,
+    title: `Guangxue Cao`,
     titleTemplate: `%s | A starter theme for Gatsby`,
-    siteUrl: `https://bonneville.netlify.com`,
-    description: `A starter theme for Gatsby`,
-    author: `Morgan Baker`,
-    twitterUsername: `@bonneville`,
-    twitterURL: `https://twitter.com/`,
-    linkedInURL: `https://www.linkedin.com/in/morgan-baker-developer-inverness`,
-    githubURL: `https://github.com/bagseye`,
+    siteUrl: `https://guangxuecao.herokuapp.com/`,
+    description: `Guangxue's Portfolio`,
+    author: `Guangxue Cao`,
+    twitterUsername: ``,
+    twitterURL: ``,
+    linkedInURL: `https://www.linkedin.com/in/ethancao/`,
+    githubURL: `https://github.com/ethan-cao`,
   },
   plugins: [
     `gatsby-plugin-sass`,
