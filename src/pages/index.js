@@ -17,9 +17,10 @@ export default ({ data }) => {
         My passion lays in building elegant solutions with intuitive user experience.
       </h1>
       <h4>
-        BTW, I am looking for new challenge currently.
+        Currently, I am looking for new challenge.
       </h4>
-      <h4 className={styles.feature}>
+
+      {/* <h4 className={styles.feature}>
         {data.allMarkdownRemark.totalCount} Featured Posts
       </h4>
       {data.allMarkdownRemark.edges.map(({ node }) => (
@@ -39,7 +40,8 @@ export default ({ data }) => {
             </div>
           </div>
         </article>
-      ))}
+      ))} */}
+
     </Layout>
   )
 }

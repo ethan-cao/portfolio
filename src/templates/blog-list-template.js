@@ -23,7 +23,7 @@ export default class BlogList extends React.Component {
           description="Recent posts"
         />
         <div className="blog-list">
-          <h1>Latest News &amp; Posts</h1>
+          <h1>Posts</h1>
           {posts.map(({ node }) => {
             const title = node.frontmatter.title || node.frontmatter.path
             return (

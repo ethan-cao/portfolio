@@ -82,14 +82,17 @@ export default ({ children }) => {
 
   return (
     <FooterCont>
+      
       <footer>
         <ul className="nav-cont">
           <li>&copy; {showYear}</li>
           <li>{data.site.siteMetadata.author}</li>
           <ListLink to="/privacy/">Privacy</ListLink>
-          <ListLink to="/cookies/">Cookies</ListLink>
+          {/* <ListLink to="/cookies/">Cookies</ListLink> */}
         </ul>
+        
         <ul className="socials">
+          <span>Created and Presented with ❤️& 🍺 by Guangxue.</span>
           {socials.map((item, index) => {
             return (
               <li>

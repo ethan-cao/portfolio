@@ -3,7 +3,7 @@ var plugins = [{
       options: {"plugins":[]},
     },{
       plugin: require('/Users/ethan/Work/Code/portfolio/node_modules/gatsby-plugin-manifest/gatsby-ssr'),
-      options: {"plugins":[],"name":"Bonneville - Gatsby Starter Theme","short_name":"Bonneville","start_url":"/","background_color":"#0027EC","theme_color":"#0027EC","display":"standalone","icon":"static/favicon.ico"},
+      options: {"plugins":[],"name":"Bonneville - Gatsby Starter Theme","short_name":"Bonneville","start_url":"/","background_color":"#0027EC","theme_color":"#0027EC","display":"standalone","icon":"static/favicon.svg"},
     },{
       plugin: require('/Users/ethan/Work/Code/portfolio/node_modules/gatsby-plugin-react-helmet/gatsby-ssr'),
       options: {"plugins":[]},

@@ -8,7 +8,7 @@ module.exports = {
   /* Your site config here */
   siteMetadata: {
     title: `Guangxue Cao`,
-    titleTemplate: `%s | A starter theme for Gatsby`,
+    titleTemplate: ``,
     siteUrl: `https://guangxuecao.herokuapp.com/`,
     description: `Guangxue's Portfolio`,
     author: `Guangxue Cao`,
@@ -31,7 +31,7 @@ module.exports = {
         background_color: `#0027EC`,
         theme_color: `#0027EC`,
         display: `standalone`,
-        icon: `static/favicon.ico`,
+        icon: `static/favicon.svg`,
       },
     },
     `gatsby-plugin-react-helmet`,
