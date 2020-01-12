@@ -16,8 +16,8 @@ export default function Template({ data }) {
       <Seo title={frontmatter.title} description={frontmatter.description} />
       <div className="blog-post">
         <h1>{frontmatter.title}</h1>
-        <h6>{frontmatter.date}</h6>
-        {featuredImgFluid === "" ? "" : (<Img fluid={featuredImgFluid} />)}
+        <span>{frontmatter.date}</span>
+        {featuredImgFluid === "" ? (<Img/>) : (<Img fluid={featuredImgFluid} />)}
         <div
           className="blog-post-content"
           dangerouslySetInnerHTML={{ __html: html }}
