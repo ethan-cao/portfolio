@@ -3,6 +3,7 @@ title: JavaScript OOP
 description: ""
 date: 2019-06-14
 path: /OOP
+featuredImage: 
 ---
 
 #Constructor function

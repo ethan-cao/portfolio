@@ -9,7 +9,7 @@ export default function Template({ data }) {
   const { markdownRemark } = data // Object destructuring
   const { frontmatter, html } = markdownRemark // Object destructuring og markdownRemark
   let featuredImg = markdownRemark.frontmatter.featuredImage;
-  let featuredImgFluid = featuredImg ? featuredImg.childImageSharp.fluid : "";
+  let featuredImgFluid = featuredImg ? featuredImg.childImageSharp.fluid : null;
 
   return (
     <Layout>
@@ -17,8 +17,8 @@ export default function Template({ data }) {
       <div className="blog-post">
         <h1>{frontmatter.title}</h1>
         <span>{frontmatter.date}</span>
-        {featuredImgFluid === "" ? (<Img/>) : (<Img fluid={featuredImgFluid} />)}
-        <div
+        {featuredImgFluid ?  (<Img fluid={featuredImgFluid} />) : ("")}
+        <div  
           className="blog-post-content"
           dangerouslySetInnerHTML={{ __html: html }}
         />
@@ -26,6 +26,7 @@ export default function Template({ data }) {
     </Layout>
   )
 }
+
 export const pageQuery = graphql`
   query($path: String!) {
     markdownRemark(frontmatter: { path: { eq: $path } }) {
