@@ -8,16 +8,16 @@ import "../scss/main.scss"
 export default function Template({ data }) {
   const { markdownRemark } = data // Object destructuring
   const { frontmatter, html } = markdownRemark // Object destructuring og markdownRemark
-  let featuredImgFluid =
-    markdownRemark.frontmatter.featuredImage.childImageSharp.fluid
+  let featuredImg = markdownRemark.frontmatter.featuredImage;
+  let featuredImgFluid = featuredImg ? featuredImg.childImageSharp.fluid : "";
 
   return (
     <Layout>
       <Seo title={frontmatter.title} description={frontmatter.description} />
       <div className="blog-post">
         <h1>{frontmatter.title}</h1>
-        <Img fluid={featuredImgFluid} />
-        <h2>{frontmatter.date}</h2>
+        <h6>{frontmatter.date}</h6>
+        {featuredImgFluid === "" ? "" : (<Img fluid={featuredImgFluid} />)}
         <div
           className="blog-post-content"
           dangerouslySetInnerHTML={{ __html: html }}

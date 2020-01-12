@@ -9,22 +9,21 @@ export default class BlogList extends React.Component {
   render() {
     const posts = this.props.data.allMarkdownRemark.edges
 
+    console.log("all : ", posts)
+
     const { currentPage, numPages } = this.props.pageContext
     const isFirst = currentPage === 1
     const isLast = currentPage === numPages
-    const prevPage =
-      currentPage - 1 === 1 ? "/blog/" : "/blog/" + (currentPage - 1).toString()
+    const prevPage = currentPage - 1 === 1 ? "/blog/" : "/blog/" + (currentPage - 1).toString()
     const nextPage = "blog/" + (currentPage + 1).toString()
 
     return (
       <Layout>
-        <Seo
-          title="All blog posts"
-          description="Recent posts"
-        />
+        <Seo title="All blog posts" description="Recent posts" />
+
         <div className="blog-list">
           <h1>Posts</h1>
-          {posts.map(({ node }) => {
+          {posts.map( ({node}) => {
             const title = node.frontmatter.title || node.frontmatter.path
             return (
               <article className={styles.item}>
@@ -36,9 +35,6 @@ export default class BlogList extends React.Component {
                 <div className={styles.content}>
                   <p>{node.excerpt}</p>
                   <div className={styles.meta}>
-                    <Link to={node.frontmatter.path}>
-                      <button className="btn">Read Article</button>
-                    </Link>
                     <h4>{node.frontmatter.date}</h4>
                   </div>
                 </div>
@@ -46,7 +42,7 @@ export default class BlogList extends React.Component {
             )
           })}
 
-          {!isFirst && (
+          {/* {!isFirst && (
             <Link className="btn" to={prevPage} rel="prev">
               Previous Page
             </Link>
@@ -55,18 +51,16 @@ export default class BlogList extends React.Component {
             <Link className="btn" to={nextPage} rel="next">
               Next Page
             </Link>
-          )}
+          )} */}
         </div>
       </Layout>
     )
   }
 }
 export const blogListQuery = graphql`
-  query blogListQuery($skip: Int!, $limit: Int!) {
+  query blogListQuery {
     allMarkdownRemark(
       sort: { fields: [frontmatter___date], order: DESC }
-      limit: $limit
-      skip: $skip
     ) {
       edges {
         node {

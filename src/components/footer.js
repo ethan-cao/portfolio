@@ -92,7 +92,7 @@ export default ({ children }) => {
         </ul>
         
         <ul className="socials">
-          <span>Created and Presented with ❤️& 🍺 by Guangxue.</span>
+          <span>Created and Presented with ❤️& 🍺 by Guangxue  </span>
           {socials.map((item, index) => {
             return (
               <li>
