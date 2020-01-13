@@ -23,11 +23,11 @@ exports.createPages = async ({ actions, graphql }) => {
       name: "portfolio",
       title: "Portfolio",
       content: `
-        <a href="https://codepen.io/ethan-cao/pen/RwNJKxy">AnalogClock_SVG</a> <br>
-        <a href="https://codepen.io/ethan-cao/pen/zYxaNpK">AutoComplete</a> <br>
-        <a href="https://codepen.io/ethan-cao/pen/GRgGrww">ProgressBar 1</a> <br>
-        <a href="https://codepen.io/ethan-cao/pen/KKweabp">ProgressBar 2</a> <br>
-        <a href="https://codepen.io/ethan-cao/pen/abzKpPw">Tooltip</a> <br>
+        <a target="_blank" href="https://codepen.io/ethan-cao/pen/RwNJKxy">AnalogClock_SVG</a> <br>
+        <a target="_blank" href="https://codepen.io/ethan-cao/pen/zYxaNpK">AutoComplete</a> <br>
+        <a target="_blank" href="https://codepen.io/ethan-cao/pen/GRgGrww">ProgressBar 1</a> <br>
+        <a target="_blank" href="https://codepen.io/ethan-cao/pen/KKweabp">ProgressBar 2</a> <br>
+        <a target="_blank" href="https://codepen.io/ethan-cao/pen/abzKpPw">Tooltip</a> <br>
         More is coming...
       `
     },
