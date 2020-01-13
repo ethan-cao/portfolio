@@ -28,6 +28,7 @@ exports.createPages = async ({ actions, graphql }) => {
         <a href="https://codepen.io/ethan-cao/pen/GRgGrww">ProgressBar 1</a> <br>
         <a href="https://codepen.io/ethan-cao/pen/KKweabp">ProgressBar 2</a> <br>
         <a href="https://codepen.io/ethan-cao/pen/abzKpPw">Tooltip</a> <br>
+        More is coming...
       `
     },
     {
