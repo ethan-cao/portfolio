@@ -1,6 +1,7 @@
 const path = require(`path`)
 exports.createPages = async ({ actions, graphql }) => {
-  const { createPage } = actions
+  const { createPage } = actions;
+
   const result = await graphql(`
     {
       allMarkdownRemark {
@@ -13,37 +14,39 @@ exports.createPages = async ({ actions, graphql }) => {
         }
       }
     }
-  `)
+  `);
+
   // Auto generate pages
   // Pages built using templates/page-template.js
   const pageData = [
     {
       name: "portfolio",
-      title:
-        "Portfolio",
-      content:
-        "Portfolio"
+      title: "Portfolio",
+      content: `
+        <a href="https://codepen.io/ethan-cao/pen/RwNJKxy">AnalogClock_SVG</a> <br>
+        <a href="https://codepen.io/ethan-cao/pen/zYxaNpK">AutoComplete</a> <br>
+        <a href="https://codepen.io/ethan-cao/pen/GRgGrww">ProgressBar 1</a> <br>
+        <a href="https://codepen.io/ethan-cao/pen/KKweabp">ProgressBar 2</a> <br>
+        <a href="https://codepen.io/ethan-cao/pen/abzKpPw">Tooltip</a> <br>
+      `
     },
     {
       name: "contact",
-      title:
-        "Contact",
-      content:
-        "Guangxue.Cao (AT) Outlook.com"
+      title: "Contact",
+      content: "Guangxue.Cao (AT) Outlook.com"
     },
     {
       name: "privacy",
-      title:
-        "Privacy",
+      title: "Privacy",
       content:
         ""
     },
     {
       name: "404",
-      title:
-        "404 error"
+      title: "404 error"
     },
   ]
+
   pageData.forEach(page => {
     createPage({
       path: `/${page.name}`,
@@ -56,6 +59,7 @@ exports.createPages = async ({ actions, graphql }) => {
     console.error(result.errors)
   }
   result.data.allMarkdownRemark.edges.forEach(({ node }) => {
+    
     createPage({
       path: node.frontmatter.path,
       component: path.resolve(`src/templates/post.js`),
@@ -78,4 +82,5 @@ exports.createPages = async ({ actions, graphql }) => {
       },
     })
   })
+  {}
 }

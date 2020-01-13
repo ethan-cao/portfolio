@@ -9,7 +9,7 @@ export default class BlogList extends React.Component {
   render() {
     const posts = this.props.data.allMarkdownRemark.edges
 
-    console.log("all : ", posts)
+    // console.log("all : ", posts)
 
     const { currentPage, numPages } = this.props.pageContext
     const isFirst = currentPage === 1

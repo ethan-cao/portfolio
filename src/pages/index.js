@@ -5,7 +5,7 @@ import styles from "../scss/blog.module.scss"
 import Seo from "../components/SEO"
 
 export default ({ data }) => {
-  console.log(data)
+  // console.log(data)
 
   return (
     <Layout>
