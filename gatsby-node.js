@@ -32,11 +32,11 @@ exports.createPages = async ({ actions, graphql }) => {
         <br>
         <p> Web App </p>
         <a target="_blank" href="https://todo-app-guangxue.herokuapp.com/">React-Redux-TODO</a> --
-        <a target="_blank" href="https://github.com/ethan-cao/Todo-React-Redux">Source</a> <br>
+        <a target="_blank" href="https://github.com/ethan-cao/Todo-React-Redux">Source</a> 
         <br>
-        <a target="_blank" href="https://radiant-lowlands-92286.herokuapp.com/">Email-Marketing</a> --
-        <a target="_blank" href="https://github.com/ethan-cao/EmailMKT">Source</a> <br>
-        <br>
+        <a target="_blank" href="">Email-Marketing</a> --
+        <a target="_blank" href="https://github.com/ethan-cao/EmailMKT">Source</a> 
+        <br><br>
         More is coming...
       `
     },
