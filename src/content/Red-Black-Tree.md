@@ -9,6 +9,7 @@ featuredImage:
 ```java
 /**
  * Left Lean Red Black (LLRB) tree, Representing a 2-3 tree as a Binary Search Tree
+ * @author Guangxue Cao
  */
 
 public class RedBlackBST<Key extends Comparable, Value> {
