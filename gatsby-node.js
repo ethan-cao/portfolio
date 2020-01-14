@@ -23,11 +23,19 @@ exports.createPages = async ({ actions, graphql }) => {
       name: "portfolio",
       title: "Portfolio",
       content: `
+        <p> Pure HTML & CSS & JS implemented Widget</p>
         <a target="_blank" href="https://codepen.io/ethan-cao/pen/RwNJKxy">AnalogClock_SVG</a> <br>
         <a target="_blank" href="https://codepen.io/ethan-cao/pen/zYxaNpK">AutoComplete</a> <br>
         <a target="_blank" href="https://codepen.io/ethan-cao/pen/GRgGrww">ProgressBar 1</a> <br>
         <a target="_blank" href="https://codepen.io/ethan-cao/pen/KKweabp">ProgressBar 2</a> <br>
         <a target="_blank" href="https://codepen.io/ethan-cao/pen/abzKpPw">Tooltip</a> <br>
+        <br>
+        <p> Web App </p>
+        <a target="_blank" href="https://todo-app-guangxue.herokuapp.com/">React-Redux-TODO</a> --
+        <a target="_blank" href="https://github.com/ethan-cao/Todo-React-Redux">Source</a> <br>
+        <br>
+        <a target="_blank" href="https://radiant-lowlands-92286.herokuapp.com/">Email-Marketing</a> --
+        <a target="_blank" href="https://github.com/ethan-cao/EmailMKT">Source</a> <br>
         <br>
         More is coming...
       `
