@@ -35,7 +35,7 @@ exports.createPages = async ({ actions, graphql }) => {
         <a target="_blank" href="https://github.com/ethan-cao/Todo-React-Redux">Source</a> 
         <br>
         <a target="_blank" href="https://radiant-lowlands-92286.herokuapp.com/">Email-Marketing</a> --
-        <a target="_blank" href="https://github.com/ethan-cao/EmailMKT">Source && Instruction</a> 
+        <a target="_blank" href="https://github.com/ethan-cao/EmailMKT">Source & Instruction</a> 
         <br><br>
         More is coming...
       `
