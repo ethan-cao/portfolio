@@ -29,7 +29,7 @@ exports.createPages = async ({ actions, graphql }) => {
         <a target="_blank" href="https://codepen.io/ethan-cao/pen/GRgGrww">ProgressBar 1</a> <br>
         <a target="_blank" href="https://codepen.io/ethan-cao/pen/KKweabp">ProgressBar 2</a> <br>
         <a target="_blank" href="https://codepen.io/ethan-cao/pen/abzKpPw">Tooltip</a> <br>
-        <a target="_blank" href="https://github.com/ethan-cao/Assignment_Miro">Email Editor</a> 
+        <a target="_blank" href="https://github.com/ethan-cao/Email-Editor">Email Editor</a> 
         <br>
         <p> Web App </p>
         <a target="_blank" href="https://todo-app-guangxue.herokuapp.com/">React-Redux-TODO</a> --
