@@ -16,9 +16,6 @@ export default ({ data }) => {
       <h1>
         My passion lays in building elegant solutions with intuitive user experience.
       </h1>
-      <h4>
-        Currently, I am looking for new challenge.
-      </h4>
 
       {/* <h4 className={styles.feature}>
         {data.allMarkdownRemark.totalCount} Featured Posts
